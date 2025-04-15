@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Creepster&family=Faster+One&family=Genos:ital,wght@0,100..900;1,100..900&family=Six+Caps&display=swap');
+body{
+    /* font-family: "Genos", serif; */
+}
+.card img{
+    height: 200px;
+    object-fit: cover;
+}
+
+.sec2{
+    background-image: url(./images/solution\ img.avif);
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+}
+.carousel-inner img{
+    height: 615px;
+}
+.sol{
+    /* font-family: "Bungee Shade", serif; */
+    font-family: "Genos", serif;
+
+}
+.carousel-item h1{
+    font-family: "Bungee Shade", serif;
+}
+
+#navbarNavDropdown a:hover{
+    text-transform: uppercase;
+    text-decoration: underline 2px solid red;
+    text-underline-offset: 10px;
+    background: #000;
+    border-radius: 10px;
+    color: #fff !important;
+    z-index: 4;
+}
+
+iframe{
+    display: inline-block;
+}
+
+.card:hover{
+    /* transform: translatey(-25px); */
+   
+}
+
+
+
+/* b2c */
+.navbar{
+    background-color: blue !important;
+}
+.nav_search{
+    width: 500px !important;
+}
+.image_section img{
+    width: 80px;
+    height: 50px;
+}
+.carousel-inner img{
+    height: 500px !important;
+    width: 100% !important;
+    object-fit: cover;
+}
+.body_img img{
+    height: 100px;
+    width: 150px;
+}
+.body_img{
+    gap: 20px;
+}
+.search_icon{
+    position: absolute !important;
+    margin-left: 640px !important;
+}
+.plus{
+    height: 20px !important;
+    width: 20px !important;
+    
+}
+.cartjs{
+    position: relative;
+    background-color: black;
+    right: -83px;
+    top: -15px;
+    padding: 2px;
+}
+.rigt_arrow{
+    font-size: 70px;
+    color: white  !important;
+    background-color: blue;
+    margin-top: 60px;
+}
+
+
+
+/* b2c cart */
+.line{
+    color: grey;
+    text-decoration: line-through;
+}
+.card{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+    
+}
+
+
+/* warehouse */
+
+.logo{
+    height: 50px;
+}
+.search_icon{
+    position: relative;
+    margin-left: -87px;
+    padding: 5px;
+}
+.cart_text{
+    position: relative;
+    margin-left: -55px;
+}
+.nav_bottom ul{
+    list-style-type: none;
+    gap: 35px;
+}
+.warehouse img{
+    height: 470px;
+    object-fit: cover;
+}
+.lorry img{
+    height: 150px;
+}
+.lorry h6{
+    color: navy;
+}
+.catlog img{
+    height: 100px;
+    width: 120px;
+}
+.mt-5{
+    color: navy;
+}
+.catlog p{
+    color: navy;
+}
+
+/* b2b */
+
+.body_sec{
+    height: 400px;
+    width: 100%;
+  background-image: url(./images/b2b\ 2.jpg);
+  opacity: 0.7;
+  background-size: cover;
+  background-position: left;
+}
+.body_sec h2{
+    margin-top: 120px;
+}
+.body_img img{
+  /* font-size: 100px !important; */
+  height: 70px;
+  width: 100px;
+}
+.b2b_body{
+  margin-left: -25px;
+  margin-top: -30px;
+}
+.b2b_img{
+    opacity: 0.1;
+}
