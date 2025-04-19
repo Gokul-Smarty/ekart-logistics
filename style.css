@@ -8,6 +8,10 @@ body{
     object-fit: cover;
 }
 
+.card{
+    
+}
+
 .sec2{
     background-image: url(./images/solution\ img.avif);
     height: 500px;
@@ -15,8 +19,13 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-
 }
+
+.marq{
+    height: 80px !important;
+    width: 180px !important;
+}
+
 .carousel-inner img{
     height: 615px;
 }
@@ -44,7 +53,8 @@ iframe{
 }
 
 .card:hover{
-    /* transform: translatey(-25px); */
+    transform: translatey(-25px);
+    transition: 2s;
    
 }
 
@@ -73,10 +83,10 @@ iframe{
 .body_img{
     gap: 20px;
 }
-.search_icon{
+/* .search_icon{
     position: absolute !important;
-    margin-left: 640px !important;
-}
+    margin-left: 600px !important;
+} */
 .plus{
     height: 20px !important;
     width: 20px !important;
@@ -85,8 +95,8 @@ iframe{
 .cartjs{
     position: relative;
     background-color: black;
-    right: -83px;
-    top: -15px;
+    right: -36px;
+    top: -14px;
     padding: 2px;
 }
 .rigt_arrow{
