@@ -12,15 +12,18 @@
   <nav class="navbar d-flex align-items-center justify-content-center">
     <div class="container">
         <img src="./images/fk llogo.jpg" style="width: 100px; height: 50px;">
-        <input class="nav_search" type="text"  placeholder="  Search for products, brands and more">
+        <input class="nav_search" type="text"  placeholder="  Search for products">
         <img class="search_icon d-sm-none" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASlJREFUSEvVlVESATEMhv+9CSfBSXASnAQnwUlwEvabSWaCtttZ9SAvtbttvvxJGp1+bN2P/asEmEhaSZpJmve/b/16lnSXdLDnwfhygK2kTeE0sGP/nX1FSwFOFjEHdxY1kaMIJawO5/2iRHgHkJK9yV+b89R5IATCShBZJRHA5qt5IyqiKxlqgJCubDAR4HmngByoMdSiOqsiAnwzzoHUmKvI1iICSA9pmta2oO3nHGni3Id9C8Dhw7wmWz6+9PasKbBH6l2XrVurIlcBxrYparJ1G3vRvHv8tlddNM+rtyvPSL+ES+fjIs4pOoi6sRa7KH4cGnYe+dJaNQsZGtekwsc1TnGEIk9JnElJSIs/nCKkBQBlEfIyaloBHEJKX+ZYS0ByOP4/4AkPvk0Z2oqyOwAAAABJRU5ErkJggg=="/>
         <input type="button" value="Login">
       <p class="text-white mt-3"> become a Seller</p>
       <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a>
-      <div>
-        <a href="#"><span class="cartjs bg-info rounded"><span class="add_cart">0</span></span> 
+      <!-- <div>
+          <a href="#"><span class="cartjs bg-info rounded"><span class="add_cart">0</span></span> 
           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQZJREFUSEvNlcsRwjAMRHc7gU5IJ+QKRQBFwJVQCXQCnSzxTJwRSfwJYAZfHetppZVCFD4sHB+/A0hSp+YB4EJy/w11vQID8HErkrdPIaMSSVoDOAO4kaxKABYA7l3gj1VMNlmSU+CUvHseJJfucQhgVbwDiQNcREnXtg8rADXJJodilB+8C4NzYJrdZ5OCGCcuSTq7hwdN0qxmm4QakrVPJjrJ7ey5YdsBeHk0pSRU0hTAq0iWyZeHbfFtAsldZDLrGzdUEFOaA3BOco7KOaPBTAI6y/pexCCTqyULkJN66JssgKQjgA2AE8mtDRa7i87BIIj/V2DoErvmh3dzAGUVFO/BXwOe8siAGao/xXMAAAAASUVORK5CYII="/>  <span class="me-4 text-white">Cart</span></a>
-      </div>
+      </div> -->
+      <button type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+        Toggle static offcanvas
+      </button>
     </div>
   </nav>
   <div class="image_section mt-3 border pt-1 container-fluid">
@@ -43,17 +46,9 @@
         <img src="./images/fligt.webp" class="d-block w-100 object-fit-sm-cover" alt="...">
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
   <!-- card section -->
-  <div class="container-fluid body_img">
+  <div class="container-fluid body_img bg-dark text-white mt-5">
       <div class="d-flex flex-wrap justify-content-between">
         <div class="text-center mt-3 cam">
           <a href="./b2c_cart.html"><img src="./images/card cam.jpg" class="cart-image">
@@ -125,41 +120,60 @@
       </div>
   </div>
 
+  <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="staticBackdropLabel">cart</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+
+      <!-- <div class="d-flex align-items-center justify-content-between">
+        <img src="./images/lap apple.jpg" style="height: 100px; width: 150px;">
+        <div>
+          <h5 class="card-title">APPLE</h5>
+          <p class="text-primary">&#8377; 26,995/-...</p>
+        <button class="bg-secondary rounded-2">Add&nbsp;to&nbsp;Cart</button>
+        </div>
+      </div> -->
+      
+    </div>
+  </div>
+
 <!--camera card section  -->
 
   <div class="container-fluid pt-5">
     <div class=" b2c_cart d-flex d-wrap row">
       <h3 class="text-center pt-5">CAMERA&nbsp;SECTION</h3>
-      <div class="card col-md-5 col-sm-6 col-lg-4  m-3" style="width: 18rem;">
+      <div class="card product-card col-md-5 col-sm-6 col-lg-4  m-3" style="width: 18rem;">
         <img src="./images/card cam.jpg" class="card-img-top" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title">Canon EOS 80D DSLR Camera with 18-55mm Lens</h5>
-          &#8377;<span class="text-primary">64,995/-... <span class="line">88,899</span><span class="text-success"> 20%off</span></span><br></br>
-          <button class="bg-secondary rounded-2">Add</button>
+          &#8377;<span class="text-primary"><span class="product-price">64995</span>/-... <span class="line">88,899</span><span class="text-success"> 20%off</span></span><br></br>
+          <button class="bg-secondary rounded-2">Add&nbsp;to&nbsp;Cart</button>
         </div>
       </div>
-      <div class="card col-md-5 col-sm-6 col-lg-3 m-3" style="width: 18rem;">
+      <div class="card product-card col-md-5 col-sm-6 col-lg-3 m-3" style="width: 18rem;">
         <img src="./images/cam lumix.jpg" class="card-img-top" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title">Panasonic Lumix S5 IIX Mirrorless Camera</h5>
-          &#8377;<span class="text-primary">55,995/-... </span><span class="line">67,000</span><span class="text-success"> 45%off</span><br></br>
-          <button class="bg-secondary rounded-2 mt-4">Add</button>
+          &#8377;<span class="text-primary"><span class="product-price">55,995</span>/-... </span><span class="line">67,000</span><span class="text-success"> 45%off</span><br></br>
+          <button class="bg-secondary rounded-2 mt-4">Add&nbsp;to&nbsp;Cart</button>
         </div>
       </div>
-      <div class="card col-md-5 col-sm-6 col-lg-3 m-3" style="width: 18rem;">
+      <div class="card product-card col-md-5 col-sm-6 col-lg-3 m-3" style="width: 18rem;">
         <img src="./images/cam nikon.jpg" class="card-img-top" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title">Nikon releases the Z 8 full-frame mirrorless camera</h5>
-          &#8377;<span class="text-primary">61,299/-... </span><span class="line">88,299</span><span class="text-success"> 34%off</span><br></br>
-          <button class="bg-secondary rounded-2">Add</button>
+          &#8377;<span class="text-primary"><span class="product-price">61,299</span>/-... </span><span class="line">88,299</span><span class="text-success"> 34%off</span><br></br>
+          <button class="bg-secondary rounded-2">Add&nbsp;to&nbsp;Cart</button>
         </div>
       </div>
-      <div class="card col-md-5 col-sm-6 col-lg-3 m-3" style="width: 18rem;">
+      <div class="card product-card col-md-5 col-sm-6 col-lg-3 m-3" style="width: 18rem;">
         <img src="./images/cam fujifilm.jpg" class="card-img-top" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title">FUJIFILM X-S20 Mirrorless Camera</h5>
-          &#8377;<span class="text-primary">54,595/-... <span class="line">63,000</span><span class="text-success"> 25%off</span><br></br>
-          <button class="bg-secondary rounded-2 mt-4">Add</button>
+          &#8377;<span class="text-primary"><span class="product-price">54,595</span>/-...  </span><span class="line">63,000</span><span class="text-success"> 25%off</span><br></br>
+          <button class="bg-secondary rounded-2 mt-4">Add&nbsp;to&nbsp;Cart</button>
         </div>
       </div>
     </div>
@@ -172,36 +186,38 @@
   <div class="container-fluid ">
     <div class="b2c_cart d-flex row">
       <h3 class="text-center pt-5">PRINTER&nbsp;SECTION</h3>
-      <div class="card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
+      <div class="card product-card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
         <img src="./images/pr canon.jpg" class="card-img-top" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title">EPSON</h5>
-          &#8377;<span class="text-primary">26,995/-... <span class="line">32,899</span><span class="text-success"> 20%off</span></span><br></br>
-          <button class="bg-secondary rounded-2">Add</button>
+          &#8377;<span class="text-primary"><span class="product-price"> 8,999</span>/-... </span><span class="line">12,899</span><span class="text-success"> 28%off</span></span><br></br>
+          <button class="bg-secondary rounded-2">Add&nbsp;to&nbsp;Cart</button>
         </div>
       </div>
-      <div class="card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
+      <div class="card product-card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
         <img src="./images/pr canonn.webp" class="card-img-top" alt="...">
         <div class="card-body text-center">
-          <h5 class="card-title">EPSON</h5>
-          &#8377;<span class="text-primary">26,995/-... <span class="line">32,899</span><span class="text-success"> 20%off</span></span><br></br>
-          <button class="bg-secondary rounded-2">Add</button>
+          <h5 class="card-title">CANON</h5>
+          &#8377;<span class="text-primary"><span class="product-price">12,995</span>/-... </span><span class="line">18,899</span><span class="text-success"> 31%off</span></span><br></br>
+          <button class="bg-secondary rounded-2">Add&nbsp;to&nbsp;Cart</button>
         </div>
       </div>
-      <div class="card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
+      <div class="card product-card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
         <img src="./images/pr brother.webp" class="card-img-top" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title">BROTHER</h5>
-          &#8377;<span class="text-primary">26,995/-... <span class="line">32,899</span><span class="text-success"> 20%off</span></span><br></br>
-          <button class="bg-secondary rounded-2">Add</button>
+          &#8377;<span class="text-primary"><span class="product-price">11,599</span>/-... </span>
+    <span class="line">12,899</span><span class="text-success"> 12%off</span></span><br></br>
+          <button class="bg-secondary rounded-2">Add&nbsp;to&nbsp;Cart</button>
         </div>
       </div>
-      <div class="card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
+      <div class="card product-card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
         <img src="./images/pr hp.jpg" class="card-img-top" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title">HP</h5>
-          &#8377;<span class="text-primary">26,995/-... <span class="line">32,899</span><span class="text-success"> 20%off</span></span><br></br>
-          <button class="bg-secondary rounded-2">Add</button>
+          &#8377;<span class="text-primary"><span class="product-price">13,999</span>/-... </span>
+          <span class="line">17,999</span><span class="text-success"> 37%off</span></span><br></br>
+          <button class="bg-secondary rounded-2">Add&nbsp;to&nbsp;Cart</button>
         </div>
       </div>
     </div>
@@ -213,36 +229,40 @@
   <div class="container-fluid">
     <div class="b2c_cart d-flex row">
       <h3 class="text-center pt-5">FRIDGE&nbsp;SECTION</h3>
-      <div class="card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
+      <div class="card product-card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
         <img src="./images/fri godrej.jpg" class="card-img-top" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title">GODREJ</h5>
-          &#8377;<span class="text-primary">26,995/-... <span class="line">32,899</span><span class="text-success"> 20%off</span></span><br></br>
-          <button class="bg-secondary rounded-2">Add</button>
+          &#8377;<span class="text-primary"><span class="product-price">26,399</span>/-... </span>
+          <span class="line">32,899</span><span class="text-success"> 20%off</span></span><br></br>
+          <button class="bg-secondary rounded-2">Add&nbsp;to&nbsp;Cart</button>
         </div>
       </div>
-      <div class="card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
+      <div class="card product-card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
         <img src="./images/fri haier.png" class="card-img-top" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title">HAIER</h5>
-          &#8377;<span class="text-primary">26,995/-... <span class="line">32,899</span><span class="text-success"> 20%off</span></span><br></br>
-          <button class="bg-secondary rounded-2">Add</button>
+          &#8377;<span class="text-primary"><span class="product-price">18,795</span>/-... </span>
+          <span class="line">20,899</span><span class="text-success"> 12%off</span></span><br></br>
+          <button class="bg-secondary rounded-2">Add&nbsp;to&nbsp;Cart</button>
         </div>
       </div>
-      <div class="card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
+      <div class="card product-card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
         <img src="./images/fri lg.webp" class="card-img-top" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title">LG</h5>
-          &#8377;<span class="text-primary">26,995/-... <span class="line">32,899</span><span class="text-success"> 20%off</span></span><br></br>
-          <button class="bg-secondary rounded-2">Add</button>
+          &#8377;<span class="text-primary"><span class="product-price">25,999</span>/-... </span>
+          <span class="line">29,899</span><span class="text-success"> 14%off</span></span><br></br>
+          <button class="bg-secondary rounded-2">Add&nbsp;to&nbsp;Cart</button>
         </div>
       </div>
-      <div class="card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
+      <div class="card product-card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
         <img src="./images/fri sam.jpg" class="card-img-top" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title">SAMSUNG</h5>
-          &#8377;<span class="text-primary">26,995/-... <span class="line">32,899</span><span class="text-success"> 20%off</span></span><br></br>
-          <button class="bg-secondary rounded-2">Add</button>
+          &#8377;<span class="text-primary"><span class="product-price">15,995</span>/-... </span>
+          <span class="line">19,299</span><span class="text-success"> 15%off</span></span><br></br>
+          <button class="bg-secondary rounded-2">Add&nbsp;to&nbsp;Cart</button>
         </div>
       </div>
   </div>
@@ -254,36 +274,40 @@
   <div class="container-fluid">
     <div class="b2c_cart d-flex row">
       <h3 class="text-center pt-5">LAPTOP&nbsp;SECTION</h3>
-      <div class="card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
+      <div class="card product-card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
         <img src="./images/lap  lenova.jpg" class="card-img-top bg-dark" alt="...">
         <div class="card-body text-center">
-          <h5 class="card-title">LENOVA</h5>
-          &#8377;<span class="text-primary">26,995/-... <span class="line">32,899</span><span class="text-success"> 20%off</span></span><br></br>
-          <button class="bg-secondary rounded-2">Add</button>
+          <h5 class="card-title">LENOVO</h5>
+          &#8377;<span class="text-primary"><span class="product-price">15,995</span>/-... </span>
+          <span class="line">16,599</span><span class="text-success"> 8%off</span></span><br></br>
+          <button class="bg-secondary rounded-2">Add&nbsp;to&nbsp;Cart</button>
         </div>
       </div>
-      <div class="card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
+      <div class="card product-card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
         <img src="./images/lap apple.jpg" class="card-img-top bg-dark" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title">APPLE</h5>
-          &#8377;<span class="text-primary">26,995/-... <span class="line">32,899</span><span class="text-success"> 20%off</span></span><br></br>
-          <button class="bg-secondary rounded-2">Add</button>
+          &#8377;<span class="text-primary"><span class="product-price">83,999</span>/-... </span>
+          <span class="line">85,599</span><span class="text-success"> 7%off</span></span><br></br>
+          <button class="bg-secondary rounded-2">Add&nbsp;to&nbsp;Cart</button>
         </div>
       </div>
-      <div class="card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
+      <div class="card product-card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
         <img src="./images/lap asus.jpg" class="card-img-top bg-dark" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title">ASUS</h5>
-          &#8377;<span class="text-primary">26,995/-... <span class="line">32,899</span><span class="text-success"> 20%off</span></span><br></br>
-          <button class="bg-secondary rounded-2">Add</button>
+          &#8377;<span class="text-primary"><span class="product-price">32,699</span>/-... </span>
+          <span class="line">34,199</span><span class="text-success"> 6%off</span></span><br></br>
+          <button class="bg-secondary rounded-2">Add&nbsp;to&nbsp;Cart</button>
         </div>
       </div>
-      <div class="card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
+      <div class="card product-card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
         <img src="./images/lap dell.jpg" class="card-img-top bg-dark" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title">DELL</h5>
-          &#8377;<span class="text-primary">26,995/-... <span class="line">32,899</span><span class="text-success"> 20%off</span></span><br></br>
-          <button class="bg-secondary rounded-2">Add</button>
+          &#8377;<span class="text-primary"><span class="product-price">33,089</span>/-... </span>
+          <span class="line">34,899</span><span class="text-success"> 3%off</span></span><br></br>
+          <button class="bg-secondary rounded-2">Add&nbsp;to&nbsp;Cart</button>
         </div>
       </div>
     </div>
@@ -294,36 +318,40 @@
   <div class="conainer-fluid">
     <div class=" b2c_cart d-flex row">
       <h3 class="text-center pt-5">MOBILE&nbsp;COVERS&nbsp;SECTION</h3>
-      <div class="card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
+      <div class="card product-card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
         <img src="./images/mob cov 2d-mobile-covers-500x500.webp" class="card-img-top bg-dark" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title">2D MOBILE COVERS</h5>
-          &#8377;<span class="text-primary">26,995/-... <span class="line">32,899</span><span class="text-success"> 20%off</span></span><br></br>
-          <button class="bg-secondary rounded-2">Add</button>
+          &#8377;<span class="text-primary"><span class="product-price">200</span>/-... </span>
+          <span class="line">250</span><span class="text-success"> 25%off</span></span><br></br>
+          <button class="bg-secondary rounded-2">Add&nbsp;to&nbsp;Cart</button>
         </div>
       </div>
-      <div class="card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
+      <div class="card product-card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
         <img src="./images/mob cov iphone covers.jpg" class="card-img-top bg-dark" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title">IPHONE COVERS</h5>
-          &#8377;<span class="text-primary">26,995/-... <span class="line">32,899</span><span class="text-success"> 20%off</span></span><br></br>
-          <button class="bg-secondary rounded-2">Add</button>
+          &#8377;<span class="text-primary"><span class="product-price">499</span>/-... </span>
+          <span class="line">899</span><span class="text-success"> 45%off</span></span><br></br>
+          <button class="bg-secondary rounded-2">Add&nbsp;to&nbsp;Cart</button>
         </div>
       </div>
-      <div class="card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
+      <div class="card product-card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
         <img src="./images/mob cov silicon.jpg" class="card-img-top bg-dark" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title">ALL&nbsp;BRAND&nbsp;CASES</h5>
-          &#8377;<span class="text-primary">26,995/-... <span class="line">32,899</span><span class="text-success"> 20%off</span></span><br></br>
-          <button class="bg-secondary rounded-2">Add</button>
+          &#8377;<span class="text-primary"><span class="product-price">100</span>/-... </span>
+          <span class="line">150</span><span class="text-success"> 33%off</span></span><br></br>
+          <button class="bg-secondary rounded-2">Add&nbsp;to&nbsp;Cart</button>
         </div>
       </div>
-      <div class="card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
+      <div class="card product-card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
           <img src="./images/mob covers.jpg" class="card-img-top bg-dark" alt="...">
           <div class="card-body text-center">
             <h5 class="card-title">PHOTO&nbsp;PRINTED&nbsp;COVER</h5>
-            &#8377;<span class="text-primary">26,995/-... <span class="line">32,899</span><span class="text-success"> 20%off</span></span><br></br>
-            <button class="bg-secondary rounded-2">Add</button>
+            &#8377;<span class="text-primary"><span class="product-price">299</span>/-...  </span>
+            <span class="line">399</span><span class="text-success"> 33%off</span></span><br></br>
+            <button class="bg-secondary rounded-2">Add&nbsp;to&nbsp;Cart</button>
           </div>
         </div>
   </div>
@@ -334,36 +362,40 @@
   <div class="container-fluid">
     <div class="b2c_cart d-flex row">
       <h3 class="text-center pt-5">MONITORS&nbsp;&&nbsp;TV&nbsp;SECTION</h3>
-      <div class="card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
+      <div class="card product-card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
         <img src="./images/tv acer  21.5' led com mon.jpg" class="card-img-top bg-dark" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title">ACER</h5>
-          &#8377;<span class="text-primary">26,995/-... <span class="line">32,899</span><span class="text-success"> 20%off</span></span><br></br>
-          <button class="bg-secondary rounded-2">Add</button>
+          &#8377;<span class="text-primary"><span class="product-price">13,999</span>/-... </span>
+          <span class="line">15,199</span><span class="text-success"> 12%off</span></span><br></br>
+          <button class="bg-secondary rounded-2">Add&nbsp;to&nbsp;Cart</button>
         </div>
       </div>
-      <div class="card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
+      <div class="card product-card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
         <img src="./images/tv lg.avif" class="card-img-top bg-dark" alt="...">
         <div class="card-body text-center">
-          <h5 class="card-title">LG</h5>
-          &#8377;<span class="text-primary">26,995/-... <span class="line">32,899</span><span class="text-success"> 20%off</span></span><br></br>
-          <button class="bg-secondary rounded-2">Add</button>
+          <h5 class="card-title">LG 32"</h5>
+          &#8377;<span class="text-primary"><span class="product-price">15,999</span>/-... </span>
+          <span class="line"></span><span class="text-success"> 0%off</span></span><br></br>
+          <button class="bg-secondary rounded-2">Add&nbsp;to&nbsp;Cart</button>
         </div>
       </div>
-      <div class="card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
+      <div class="card product-card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
         <img src="./images/tv tcl.webp" class="card-img-top bg-dark" alt="...">
         <div class="card-body text-center">
-          <h5 class="card-title">TCL</h5>
-          &#8377;<span class="text-primary">26,995/-... <span class="line">32,899</span><span class="text-success"> 20%off</span></span><br></br>
-          <button class="bg-secondary rounded-2">Add</button>
+          <h5 class="card-title">TCL 50"</h5>
+          &#8377;<span class="text-primary"><span class="product-price">28,490</span>/-... </span>
+          <span class="line">32,899</span><span class="text-success"> 17%off</span></span><br></br>
+          <button class="bg-secondary rounded-2">Add&nbsp;to&nbsp;Cart</button>
         </div>
       </div>
-      <div class="card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
+      <div class="card product-card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
           <img src="./images/tv ultra oled pro 4k.jpg" class="card-img-top bg-dark" alt="...">
           <div class="card-body text-center">
             <h5 class="card-title">ULTRA OLED PRO 4K</h5>
-            &#8377;<span class="text-primary">26,995/-... <span class="line">32,899</span><span class="text-success"> 20%off</span></span><br></br>
-            <button class="bg-secondary rounded-2">Add</button>
+            &#8377;<span class="text-primary"><span class="product-price">1,26,995</span>/-... </span>
+            <span class="line">1,32,899</span><span class="text-success"> 17%off</span></span><br></br>
+            <button class="bg-secondary rounded-2">Add&nbsp;to&nbsp;Cart</button>
           </div>
         </div>
   </div>
@@ -374,58 +406,65 @@
   <div class="container-fluid">
     <div class="b2c_cart d-flex row">
       <h3 class="text-center pt-5">HOME&nbsp;THEATERS&nbsp;SECTION</h3>
-      <div class="card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
+      <div class="card product-card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
         <img src="./images/ht jbl 5.1 sound bar.jpg" class="card-img-top bg-dark" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title">JBL</h5><p>5.1 SOUND BAR</p>
-          &#8377;<span class="text-primary">26,995/-... <span class="line">32,899</span><span class="text-success"> 20%off</span></span><br></br>
-          <button class="bg-secondary rounded-2 mt-2">Add</button>
+          &#8377;<span class="text-primary"><span class="product-price">12,999</span>/-... </span>
+          <span class="line">15,899</span><span class="text-success"> 26%off</span></span><br></br>
+          <button class="bg-secondary rounded-2 mt-2">Add&nbsp;to&nbsp;Cart</button>
         </div>
       </div>
-      <div class="card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
+      <div class="card product-card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
         <img src="./images/ht akai_2.1.png" class="card-img-top bg-dark" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title">AKAI 2.1</h5>
-          &#8377;<span class="text-primary">26,995/-... <span class="line">32,899</span><span class="text-success"> 20%off</span></span><br></br>
-          <button class="bg-secondary rounded-2 mt-5">Add</button>
+          &#8377;<span class="text-primary"><span class="product-price">4,499</span>/-... </span>
+          <span class="line">6,899</span><span class="text-success"> 20%off</span></span><br></br>
+          <button class="bg-secondary rounded-2 mt-5">Add&nbsp;to&nbsp;Cart</button>
         </div>
       </div>
-      <div class="card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
+      <div class="card product-card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
         <img src="./images/ht pilips.webp" class="card-img-top bg-dark" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title">PHILIPS</h5>
-          &#8377;<span class="text-primary">66,995/-... <span class="line">32,899</span><span class="text-success"> 20%off</span></span><br></br>
-          <button class="bg-secondary rounded-2 mt-5">Add</button>
+          &#8377;<span class="text-primary"><span class="product-price">39,995</span>/-... </span>
+          <span class="line">42,899</span><span class="text-success"> 8%off</span></span><br></br>
+          <button class="bg-secondary rounded-2 mt-5">Add&nbsp;to&nbsp;Cart</button>
         </div>
       </div>
-      <div class="card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
+      <div class="card product-card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
         <img src="./images/ht samsung 5.1.jpg" class="card-img-top bg-dark" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title">SAMSUNG</h5>
-          &#8377;<span class="text-primary">26,995/-... <span class="line">32,899</span><span class="text-success"> 20%off</span></span><br></br>
-          <button class="bg-secondary rounded-2 mt-5">Add</button>
+          &#8377;<span class="text-primary"><span class="product-price">9,999</span>/-...  </span>
+          <span class="line">11,899</span><span class="text-success"> 8%off</span></span><br></br>
+          <button class="bg-secondary rounded-2 mt-5">Add&nbsp;to&nbsp;Cart</button>
         </div>
       </div>
-      <div class="card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
+      <div class="card product-card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
         <img src="./images/ht sony 7.1.jpg" class="card-img-top bg-dark" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title">SONY 7.1</h5>
-          &#8377;<span class="text-primary">26,995/-... <span class="line">32,899</span><span class="text-success"> 20%off</span></span><br></br>
-          <button class="bg-secondary rounded-2 mt-5">Add</button>
+          &#8377;<span class="text-primary"><span class="product-price">75,999</span>/-... </span>
+          <span class="line">76,899</span><span class="text-success"> 2%off</span></span><br></br>
+          <button class="bg-secondary rounded-2 mt-5">Add&nbsp;to&nbsp;Cart</button>
         </div>
       </div>
-      <div class="card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
+      <div class="card product-card col-md-4 col-sm-6 col-lg-3  m-3" style="width: 18rem;">
           <img src="./images/ht Samsung-HT-ES420K-2-1-1336262-9-7753c.jpg" class="card-img-top bg-dark" alt="...">
           <div class="card-body text-center">
             <h5 class="card-title">SAMSUNG 2.1 SURROUND</h5>
-            &#8377;<span class="text-primary">26,995/-... <span class="line">32,899</span><span class="text-success"> 20%off</span></span><br></br>
-            <button class="bg-secondary rounded-2 mt-4">Add</button>
+            &#8377;<span class="text-primary"><span class="product-price">2,699</span>/-... </span>
+            <span class="line">3,899</span><span class="text-success"> 30%off</span></span><br></br>
+            <button class="bg-secondary rounded-2 mt-4">Add&nbsp;to&nbsp;Cart</button>
           </div>
         </div>
   </div>
 
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
   <script src="./main.js" type="text/javascript" ></script>
 </body>
 </html>
