@@ -6,11 +6,9 @@ body{
 .card img{
     height: 200px;
     object-fit: cover;
+    /* object-position: top; */
 }
 
-.card{
-    
-}
 
 .sec2{
     background-image: url(./images/solution\ img.avif);
@@ -60,11 +58,18 @@ iframe{
 
 
 /* b2c */
+*body{
+    margin: 0;
+    padding: 0;
+}
+
+
+
 .navbar{
     background-color: blue !important;
 }
 .nav_search{
-    width: 500px !important;
+    width: 300px !important;
 }
 .image_section img{
     width: 80px;
@@ -117,7 +122,7 @@ iframe{
 }
 
 .b2c_cart{
-    background-color: rgba(218, 108, 13, 0.514);
+    background-color: grey;
     display: flex !important;
     justify-content: center;
 }
@@ -133,8 +138,8 @@ iframe{
 .search_icon{
     height: 30px;
     /* position: relative; */
-    margin-left: -5px;
-    margin-top: -3px;
+    margin-left: -98px;
+    margin-top: 4px;
     /* padding: 5px; */
 }
 .cart_text{
@@ -164,6 +169,11 @@ iframe{
 }
 .catlog p{
     color: navy;
+}
+.search_icon-wh{
+    height: 30px !important;
+    margin-top: -1px;
+    margin-right: -40px;
 }
 
 
