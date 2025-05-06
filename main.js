@@ -73,6 +73,9 @@ function updateCart(img, name, price){
           <p class="text-primary">&#8377; ${price} /-...</p>
         <button class="bg-secondary rounded-2">Add&nbsp;to&nbsp;Cart</button>
         </div>
+         <div>
+          <img class="bg-danger del-btn" onclick="del(event)" style="height: 50px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAALBJREFUSEvtldENgzAMRO82KZuUUTpJR2EUGIVNjIIUKU2I7SaN+kP+wNjvzlYwMfhwcH2oABF5AlgAPCpCdgAvkltNqAVYAQSIdnaSUytAQiLJSyEiosbPXE2aVcCKF4CY0Dv41PGHg+GAqNxjPXWpfd88vJ8CcoXWcwp3ObAKdrfoBhT36tuW3DMwf03dLbIILQDPosm5G8k5f1m7yWGLvR3bLNarrs7/Ln2r9574AdxozhlwDkgoAAAAAElFTkSuQmCC"/>
+        </div>
       </div>
   `
 
@@ -81,3 +84,38 @@ function updateCart(img, name, price){
 
   offcanvasBody.append(div)
 }
+
+function del(event){
+  let cartDelParent = event.target.parentElement.parentElement;
+  cartDelParent.remove()
+  
+}
+
+
+
+
+let btncart = document.querySelectorAll(".cartbtn")
+let abtn = document.querySelector(".add_cart")
+
+btncart.forEach((item)=>{
+  item.addEventListener("click", ()=>{
+  abtn.innerHTML++
+  })
+})
+
+
+
+
+
+
+
+
+
+let wh_btn = document.querySelectorAll(".wh-card-btn")
+let cartCount = document.querySelector(".cart_text b")
+
+wh_btn.forEach((item)=>{
+  item.addEventListener("click", ()=>{
+    cartCount.innerHTML++
+  })
+})
